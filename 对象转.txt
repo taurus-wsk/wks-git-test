@@ -1,0 +1,12 @@
+ const  elementChildToList = (obj) => {
+              let map = new Map();
+              for(let key in obj) {
+                  if(obj[key] instanceof Object){
+                      let item=elementChildToList(obj[key]);
+                      map.set(key,item);
+                  }else{
+                      map.set(key,obj[key]);
+                  }
+              }
+              return map;   
+        }
