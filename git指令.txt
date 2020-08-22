@@ -50,7 +50,8 @@ git stash apply
 git push origin --delete A
 #创建远程分支并提交
 git push --set-upstream origin wsk-dev
-
+#删除已经deleted的文件
+git ls-files --deleted
 
 
 
