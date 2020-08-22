@@ -37,7 +37,7 @@
 #合并分支
  git merge dev
 #删除分支
- git branch -d dev
+ git branch -D dev
 #分支合并图
  git log --graph
 #暂存保存
