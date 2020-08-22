@@ -48,11 +48,11 @@ git stash list
 git stash apply
 #删除远程 origin/A 分支 
 git push origin --delete A
-#创建远程分支并提交
+#创建远程分支并提交,也可从origin/master切换回origin/wsk-dev
 git push --set-upstream origin wsk-dev
 #删除已经deleted的文件
 git rm $(git ls-files --deleted)
-#在分支上设置提交到master
+#在分支上设置追踪，提交到master
 123@123-PC MINGW64 /d/java/wks-git-test (wsk-dev)
 $ git branch --set-upstream-to  origin/master
 //////////////////////
