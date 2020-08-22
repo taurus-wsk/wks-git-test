@@ -46,6 +46,11 @@ git stash
 git stash list
 #将保存的数据恢复
 git stash apply
+#删除远程 origin/A 分支 
+git push origin --delete A
+#创建远程分支并提交
+git push --set-upstream origin wsk-dev
+
 
 
 
