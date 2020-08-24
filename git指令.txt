@@ -58,6 +58,10 @@ $ git branch --set-upstream-to  origin/master
 //////////////////////
 123@123-PC MINGW64 /d/java/wks-git-test (wsk-dev)
 $ git push origin HEAD:master
+#忽略修改的文件
+git update-index --assume-unchanged ant-design-vue-jeecg/vue.config.js
+git update-index --no-assume-unchanged 文件名
+#作用：上一个命令的逆操作，重新追踪文件改动。
 
 
 
